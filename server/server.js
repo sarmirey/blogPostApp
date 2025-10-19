@@ -1,6 +1,8 @@
-const app = require("./app");
+const dotenv = require("dotenv");
 const mongoose = require("mongoose");
-const port = 5000;
+dotenv.config({ path: "./config.env" });
+const app = require("./app");
+const port = 8000;
 
 console.log("FOUND", process.env.DATABASE_CONNECTION);
 
@@ -9,15 +11,14 @@ const DB = process.env.DATABASE_CONNECTION.replace(
   process.env.DATABASE_PASS
 );
 
-mongoose
-  .connect(DB, {
-    useNewUrlParse: true,
-    useCreateIndex: true,
-    useFindandModify: false,
+const connection = mongoose.connect(DB);
+
+connection
+  .then(() => {
+    console.log("CONNECTION SUCCESSFUL");
   })
-  .then((conn) => {
-    console.log(conn.connections);
-    console.log("Connected to DataBase successfully");
+  .catch((error) => {
+    console.log("CONNECTION ERROR", error);
   });
 
 app.listen(port, () => {
