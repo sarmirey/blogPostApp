@@ -22,6 +22,18 @@ This Full Stack Blog Post Application allows users to create, edit, delete, and 
 - Material-UI
 - Axios
 
+**Backend:**  
+I started with the backend to ensure API endpoints were ready for frontend integration. I used **Node.js** and **MongoDB** for a consistent JavaScript stack. **Express** simplified building endpoints and managing routes while keeping the MVC structure clean. I created **models** to define database schemas and **controllers** to handle business logic. **Mongoose** provided convenient methods for querying, inserting, and updating data, enabling a structured, maintainable approach to database management.
+
+**Frontend:**  
+I used **Material-UI** to quickly build a clean, consistent UI and focused on full-stack integration. **Axios** simplified API requests (GET, POST, PUT, DELETE). I bootstrapped the project with **Vite** for faster builds. I preferred **functional components** for easier use of state and useEffect hooks. If I had more time, I would refactor forms for creating and editing posts into a single dynamic component and improve mobile responsiveness using Material-UI’s built-in features.
+
+**Other Decisions:**
+
+- **Search & Pagination:** Implemented on the backend to ensure users always receive the most up to date data.
+- **Individual Blog Posts:** Opened on a separate page for better UX and shareability, rather than a modal.
+- **Create Post:** Implemented as a modal for simplicity, but a dedicated page would be better for production.
+
 ---
 
 ## Installation
