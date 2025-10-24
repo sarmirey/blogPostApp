@@ -20,15 +20,39 @@ exports.createPost = async (req, res) => {
 
 exports.getAllPosts = async (req, res) => {
   try {
-    const blogPosts = await Blog.find();
-    res.status(201).json({
+    const queryObj = { ...req.query };
+    const isNotEmpty = queryObj.search;
+
+    // BUILDING SEARCH QUERY
+    let search = isNotEmpty
+      ? { title: { $regex: queryObj.search, $options: "i" } }
+      : {};
+    const totalNumOfPages =
+      queryObj.search != ""
+        ? await Blog.countDocuments(search)
+        : await Blog.countDocuments({});
+
+    //BUILDING PAGINATION PARAMATERS
+    const page = Number(queryObj.page);
+    const limit = Number(queryObj.limit);
+    const skipData = (page - 1) * limit;
+
+    //EXECUTE QUERY
+    const blogPosts = await Blog.find(search)
+      .sort({ dateCreated: -1 })
+      .skip(skipData)
+      .limit(limit);
+    const results = blogPosts.length;
+    res.status(200).json({
       status: "success",
-      results: blogPosts.length,
+      results: results,
+      totalPages: Math.ceil(totalNumOfPages / limit),
       data: {
         blogPost: blogPosts,
       },
     });
   } catch (error) {
+    console.log(error);
     res.status(400).json({
       status: "Fail",
       message: error,
@@ -39,16 +63,16 @@ exports.getAllPosts = async (req, res) => {
 exports.getPost = async (req, res) => {
   try {
     const blogPost = await Blog.findById(req.params.id);
-    res.status(201).json({
+    res.status(200).json({
       status: "success",
       data: {
         blogPost: blogPost,
       },
     });
   } catch (error) {
-    res.status(400).json({
+    res.status(404).json({
       status: "Fail",
-      message: error,
+      message: "No blog post found with that ID",
     });
   }
 };
@@ -58,15 +82,16 @@ exports.updatePost = async (req, res) => {
     const updatePost = await Blog.findByIdAndUpdate(req.params.id, req.body, {
       new: true,
       runValidators: true,
+      overwrite: true, //TO ENSURE A PROPER PUT REQUEST
     });
-    res.status(201).json({
+    res.status(200).json({
       status: "success",
       data: {
         blogPost: updatePost,
       },
     });
   } catch (error) {
-    res.status(400).json({
+    res.status(404).json({
       status: "Fail",
       message: error,
     });

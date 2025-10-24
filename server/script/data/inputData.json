@@ -1,0 +1,122 @@
+[
+  {
+    "title": "Kickstart Your Day",
+    "subtitle": "Morning motivation",
+    "content": "Start your morning with positivity and purpose to make the most of your day.",
+    "author": "Reynerio Sarmiento",
+    "tags": ["#HappyWorkWeek", "#Motivation"],
+    "dateCreated": "2025-10-23T08:00:00.000Z"
+  },
+  {
+    "title": "Weekend Adventure",
+    "subtitle": "Explore new places",
+    "content": "Weekends are perfect for hiking, traveling, or just relaxing and recharging.",
+    "author": "Reynerio Sarmiento",
+    "tags": ["#HappyWeekend", "#Traveling"],
+    "dateCreated": "2025-10-23T09:00:00.000Z"
+  },
+  {
+    "title": "Stay Focused",
+    "subtitle": "Keep pushing forward",
+    "content": "Even small steps towards your goals can lead to big results over time.",
+    "author": "Reynerio Sarmiento",
+    "tags": ["#Motivation", "#Awesome"],
+    "dateCreated": "2025-10-23T10:00:00.000Z"
+  },
+  {
+    "title": "Cooking Fun",
+    "subtitle": "Delicious experiments",
+    "content": "Trying new recipes can be a creative and relaxing way to spend your day.",
+    "author": "Reynerio Sarmiento",
+    "tags": ["#Cooking", "#FeelingSmart"],
+    "dateCreated": "2025-10-23T11:00:00.000Z"
+  },
+  {
+    "title": "Hiking Challenge",
+    "subtitle": "Reach new heights",
+    "content": "Hiking keeps your body active and your mind clear—perfect for the weekend.",
+    "author": "Reynerio Sarmiento",
+    "tags": ["#Hiking", "#FeelingActive"],
+    "dateCreated": "2025-10-23T12:00:00.000Z"
+  },
+  {
+    "title": "Tech is Life",
+    "subtitle": "Innovate every day",
+    "content": "Embrace new technologies to make your work smarter and more efficient.",
+    "author": "Reynerio Sarmiento",
+    "tags": ["#TechisGreat", "#LetsGo"],
+    "dateCreated": "2025-10-23T13:00:00.000Z"
+  },
+  {
+    "title": "Positive Mindset",
+    "subtitle": "Think great thoughts",
+    "content": "A positive attitude attracts positive outcomes—start every day with a smile.",
+    "author": "Reynerio Sarmiento",
+    "tags": ["#Awesome", "#Great"],
+    "dateCreated": "2025-10-23T14:00:00.000Z"
+  },
+  {
+    "title": "Feeling Smart Today",
+    "subtitle": "Learn something new",
+    "content": "Challenge yourself to learn a new skill every week and grow steadily.",
+    "author": "Reynerio Sarmiento",
+    "tags": ["#FeelingSmart", "#Motivation"],
+    "dateCreated": "2025-10-23T15:00:00.000Z"
+  },
+  {
+    "title": "Travel Diaries",
+    "subtitle": "Adventure awaits",
+    "content": "Traveling opens your mind and gives you memories that last a lifetime.",
+    "author": "Reynerio Sarmiento",
+    "tags": ["#Traveling", "#LetsGo"],
+    "dateCreated": "2025-10-23T16:00:00.000Z"
+  },
+  {
+    "title": "Feeling Down?",
+    "subtitle": "Lift your spirits",
+    "content": "Even a short walk or small hobby can help improve your mood quickly.",
+    "author": "Reynerio Sarmiento",
+    "tags": ["#FeelingDown", "#HappyWorkWeek"],
+    "dateCreated": "2025-10-23T17:00:00.000Z"
+  },
+  {
+    "title": "Weekend Fun",
+    "subtitle": "Relax and enjoy",
+    "content": "Take time to recharge and do activities that make you happy this weekend.",
+    "author": "Reynerio Sarmiento",
+    "tags": ["#HappyWeekend", "#Awesome"],
+    "dateCreated": "2025-10-23T18:00:00.000Z"
+  },
+  {
+    "title": "Morning Boost",
+    "subtitle": "Start strong",
+    "content": "Drink coffee, stretch, and set your goals for a productive morning.",
+    "author": "Reynerio Sarmiento",
+    "tags": ["#HappyWorkWeek", "#Motivation"],
+    "dateCreated": "2025-10-23T19:00:00.000Z"
+  },
+  {
+    "title": "Creative Cooking",
+    "subtitle": "Taste and experiment",
+    "content": "Try mixing flavors and spices to make your meals exciting and unique.",
+    "author": "Reynerio Sarmiento",
+    "tags": ["#Cooking", "#Awesome"],
+    "dateCreated": "2025-10-23T20:00:00.000Z"
+  },
+  {
+    "title": "Active Lifestyle",
+    "subtitle": "Stay moving",
+    "content": "Even a daily walk or short exercise routine can boost energy and mood.",
+    "author": "Reynerio Sarmiento",
+    "tags": ["#FeelingActive", "#Great"],
+    "dateCreated": "2025-10-23T21:00:00.000Z"
+  },
+  {
+    "title": "Tech Tips",
+    "subtitle": "Be smarter with tools",
+    "content": "Explore new apps or shortcuts to make your workflow faster and easier.",
+    "author": "Reynerio Sarmiento",
+    "tags": ["#TechisGreat", "#FeelingSmart"],
+    "dateCreated": "2025-10-23T22:00:00.000Z"
+  }
+]
