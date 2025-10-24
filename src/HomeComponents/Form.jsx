@@ -32,7 +32,6 @@ const style = {
   pb: 3,
 };
 const Form = (props) => {
-  const [tags, setTags] = useState([]);
   const [currentTagSelected, setCurrentTagSelected] = useState("");
   const [inputData, setInputData] = useState({
     title: "",
