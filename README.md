@@ -99,4 +99,4 @@ Data successfully loaded!
 
 2. Run the development server
 
-- npm run start
+- npm run dev
